@@ -3,6 +3,8 @@
 document.getElementById("btn").addEventListener("click", btnClicked);
 
 function btnClicked() {
+ 
+  // Define Variables
   let a1 = document.getElementById("answer1").value.toLowerCase();
   let a2 = document.getElementById("answer2").value.toLowerCase();
   let a3 = document.getElementById("answer3").value.toLowerCase();
@@ -10,6 +12,7 @@ function btnClicked() {
   let totalcorrect = 0;
   let totalquestions = 4;
 
+  // Check Answers
   if (a1 === "false") {
     document.getElementById("result").innerHTML = "Correct";
     totalcorrect++;
@@ -38,7 +41,7 @@ function btnClicked() {
     document.getElementById("result3").innerHTML = "False";
   }
 
-  // Output
+  // Output Note on How Well You Did
 
   document.getElementById("output").innerHTML = totalcorrect;
 
