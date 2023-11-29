@@ -1,3 +1,5 @@
+// Soccer Quiz by Ruhan Shah
+
 // Button Event Listener
 
 document.getElementById("btn").addEventListener("click", btnClicked);
